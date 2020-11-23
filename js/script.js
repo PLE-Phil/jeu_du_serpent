@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             this.nextMoveX = 1;                                               // .nextMoveX c'est le prochain mouvement en x.
             this.nextMoveY = 0;                                               // Empêche le serpent de bouger en diagonale.
 
-            this.serpentLongueur = 1;                                         // La longueur d serpent au début est de 1 carré.
+            this.serpentLongueur = 1;                                         // La longueur du serpent au début est de 1 carré.
             this.tblCarreSerpent = [];                                        // Tableau pour conserver en référence les carré; la longueur du serpent.
 
             this.touche = false;
@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             console.log(evt.keyCode);                                         // Si on appuie sur une touche du clavier, on vera le nombre qui correspond à la touche en code. Exemple : flèche du bas = 40.
 
             this.deplacement(evt.keyCode);                                    // Appeler la fonction de déplacement selon le paramètre; la touche appuyée.
+
+            console.log("Je fonctionne !");
         }
 
         deplacement(dirCode) {                                                // dirCode c'est le code de direction (la touche).
