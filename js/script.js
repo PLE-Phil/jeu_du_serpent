@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 this.touche = true;
             }
 
-            if (!this.touche) {            // Si this.touche == false...
+            if (!this.touche) {                                              // Si this.touche == false...
                 if (this.currentX === this.leJeu.pomme.pomme[1] && this.leJeu.pomme.pomme[2]) {                                      // Si la position actuelle de mon serpent est la même en x et en y qu'une pomme...
                     this.serpentLongueur++;                                  // Augmente la taille du serpent.
 
@@ -145,9 +145,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 this.currentX = nextX;                                       // On transforme la position actuelle par le prochain mouvement (on la remplace) et ça donne une position de départ au serpent en x.
                 this.currentY = nextY;                                       // On transforme la position actuelle par le prochain mouvement (on la remplace) et ça donne une position de départ au serpent en y.
             }
-
-            console.log(nextX, nextY);
-
         }
 
         dessineCarre(x, y) {                                                 // Créer le serpent
